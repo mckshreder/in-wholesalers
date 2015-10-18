@@ -1,0 +1,8 @@
+<% if @rss.entries.count > 0 %>
+    <% @rss.entries.each do |entry| %>
+    <div><%= link_to entry.title, entry.link %>
+     (<%= time_ago_in_words(entry.pubDate) %> ago via blog rss)</div>
+    <% end %>   
+<% else %>
+    <h2>No Posts Exist</h2>
+<% end %>
