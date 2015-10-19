@@ -3,13 +3,20 @@ class HousewaresController < ApplicationController
   require 'open-uri'
   require 'nokogiri'
   require 'metainspector'
+  require 'feedjira'
   def index
     # @page = MetaInspector.new("http://www.4sgm.com/is-bin/INTERSHOP.enfinity/WFS/4sgm-Storefront-Site/en_US/-/USD/ViewStandardCatalog-Browse;pgid=8uKCiKaqQORSR00pmU_Mlavu000065N54_zQ?CatalogCategoryID=vLDAwGQTs1EAAAEL9VQ0E4U1")
 
     # @images.all = @page.images.with_size
 
     url = "http://www.4sgm.com/is-bin/INTERSHOP.enfinity/WFS/4sgm-Storefront-Site/en_US/-/USD/ViewStandardCatalog-Browse;pgid=8uKCiKaqQORSR00pmU_Mlavu000065N54_zQ?CatalogCategoryID=vLDAwGQTs1EAAAEL9VQ0E4U1"
-  @doc = Nokogiri::HTML(open(url))
+ @feed = Feedjira::Feed.fetch_and_parse url
+
+# feed.entries.first.title
+# => "Announcing verison 
+    # @photo = feed.summary.sanitize
+
+  
   # @dads = @doc.at_css('.center').text
   # @title = item.at_css(".prodLink").
 

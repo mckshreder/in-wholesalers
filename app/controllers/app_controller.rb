@@ -7,8 +7,13 @@ class AppController < ApplicationController
   end
 
   def rsstest
+    # @regex = /(<([^>]+)>)/i;
 
-	# @rss = SimpleRSS.parse open('http://www.4sgm.com/is-bin/INTERSHOP.enfinity/WFS/4sgm-Storefront-Site/en_US/-/USD/ViewParametricSearch-RSS;pgid=8uKCiKaqQORSR00pmU_Mlavu0000K_PVledH?SearchCategoryUUID=t_DAwGQTQFQAAAELiFM0E4U1&rsstitle=Baby+Items')
+  @rss = SimpleRSS.parse open('http://www.4sgm.com/is-bin/INTERSHOP.enfinity/WFS/4sgm-Storefront-Site/en_US/-/USD/ViewParametricSearch-RSS;pgid=8uKCiKaqQORSR00pmU_Mlavu0000K_PVledH?SearchCategoryUUID=t_DAwGQTQFQAAAELiFM0E4U1&rsstitle=Baby+Items')
+
+  # @feed = @rss.entries.description.gsub!(/\A"|"\Z/, '')
+
+
 
   	 # url = "http://www.4sgm.com/is-bin/INTERSHOP.enfinity/WFS/4sgm-Storefront-Site/en_US/-/USD/ViewParametricSearch-RSS;pgid=8uKCiKaqQORSR00pmU_Mlavu0000K_PVledH?SearchCategoryUUID=t_DAwGQTQFQAAAELiFM0E4U1&rsstitle=Baby+Items"
 
@@ -32,9 +37,13 @@ class AppController < ApplicationController
   	# doc = Nokogiri::HTML(open(@rss))
   	# @items = doc.at_css(".item")
 
-	url = "http://www.walmart.com/search/search-ng.do?search_constraint=0&ic=48_0&search_query=batman&Find.x=0&Find.y=0&Find=Find"
-	@doc = Nokogiri::HTML(open(url))
-	@dad = @doc.at_css("title").text
+	url = "http://www.4sgm.com/is-bin/INTERSHOP.enfinity/WFS/4sgm-Storefront-Site/en_US/-/USD/ViewParametricSearch-RSS;pgid=8uKCiKaqQORSR00pmU_Mlavu0000Evovg1JD?SearchCategoryUUID=vLDAwGQTs1EAAAEL9VQ0E4U1"
+	@doc = Nokogiri::XML(open(url))
+	@dad = @doc.text
+  @expression = "rss/channel/item/image_link"
+  @nodes = @doc.xpath(@expression)
+
+
 	# doc.css(".item").each do |item|
 	#   title = item.at_css(".prodLink").text
 	#   price = item.at_css(".PriceCompare .BodyS, .PriceXLBold").text[/\$[0-9\.]+/]

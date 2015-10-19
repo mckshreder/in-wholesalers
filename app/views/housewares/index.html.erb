@@ -1,6 +1,7 @@
-
-<% @doc.css('table#categorystyle img').each do |teaser_bmw| %>
-  <p><%= teaser_bmw%> </p>
-  #other content of teaser you can search here
+<% if @feed.entries.count > 0 %>
+    <% @feed.entries.each do |entry| %>
+    <div><%= entry.summary%></div>
+    <% end %>   
+<% else %>
+    <h2>No Posts Exist</h2>
 <% end %>
-<!-- <p><%= @dad%></p> -->

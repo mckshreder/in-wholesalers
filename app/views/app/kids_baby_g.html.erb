@@ -8,8 +8,11 @@
      
   <!--    <img src="../assets/images/carousel-img.png" alt="" class="img-responsive">
       -->
-   <h1><%= @dad %></h1>  
-     
+   <!-- <h1><%= @dad %></h1>   -->
+    <% @nodes.each do |node| %>
+   <p> <%= link_to (node.text) %> </p>
+   <%= node %>
+  <%end%>  
      
      
     </div>
