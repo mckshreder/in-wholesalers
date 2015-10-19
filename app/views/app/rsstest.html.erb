@@ -1,6 +1,6 @@
-<!-- <%= @image_link %> -->
-<% if @rss.entries.count > 0 %>
-    <% @rss.entries.each do |entry| %>
+
+<% if @rss.items.count > 0 %>
+    <% @rss.items.each do |entry| %>
     <div>
     <%= link_to entry.title, entry.link %>
     <!-- <%= link_to (entry.link)%> -->
