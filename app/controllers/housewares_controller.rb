@@ -1,19 +1,28 @@
 class HousewaresController < ApplicationController
+  require 'simple-rss'
+  require 'open-uri'
+  require 'nokogiri'
+  require 'metainspector'
   def index
-    require 'open-uri'
-    doc = Nokogiri::HTML(open("http://www.4sgm.com/is-bin/INTERSHOP.enfinity/WFS/4sgm-Storefront-Site/en_US/-/USD/ViewStandardCatalog-Browse;pgid=8uKCiKaqQORSR00pmU_Mlavu000065N54_zQ?CatalogCategoryID=vLDAwGQTs1EAAAEL9VQ0E4U1"))
+    # @page = MetaInspector.new("http://www.4sgm.com/is-bin/INTERSHOP.enfinity/WFS/4sgm-Storefront-Site/en_US/-/USD/ViewStandardCatalog-Browse;pgid=8uKCiKaqQORSR00pmU_Mlavu000065N54_zQ?CatalogCategoryID=vLDAwGQTs1EAAAEL9VQ0E4U1")
 
-    # Narrow down on what we want and build the entries array
-    entries = doc.css('.entry')
-    @entriesArray = []
-    entries.each do |entry|
-      title = entry.css('p.title').text
-      link = entry.css('p.title')[0]['href']
-      @entriesArray << Entry.new(title, link)
-    end
+    # @images.all = @page.images.with_size
 
-  # We'll just try to render the array and see what happens
-  render text: @entriesArray
+    url = "http://www.4sgm.com/is-bin/INTERSHOP.enfinity/WFS/4sgm-Storefront-Site/en_US/-/USD/ViewStandardCatalog-Browse;pgid=8uKCiKaqQORSR00pmU_Mlavu000065N54_zQ?CatalogCategoryID=vLDAwGQTs1EAAAEL9VQ0E4U1"
+  @doc = Nokogiri::HTML(open(url))
+  # @dads = @doc.at_css('.center').text
+  # @title = item.at_css(".prodLink").
+
+  # @items = @doc.css(".item").each do |item|
+  # title = item.at_css(".prodLink").inner_text
+  # price = item.at_css(".PriceCompare .BodyS, .PriceXLBold").inner_text[/\$[0-9\.]+/]
+  # puts "#{title} - #{price}"
+  # puts item.at_css(".prodLink")[:href]
+# end
+
+
+
+
   end
 
   def baskets_storage_racks
@@ -52,11 +61,4 @@ class HousewaresController < ApplicationController
   def package_deals
   end
 end
-class Entry
-    def initialize(title, link)
-      @title = title
-      @link = link
-    end
-    attr_reader :title
-    attr_reader :link
-  end
+
