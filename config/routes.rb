@@ -3,6 +3,35 @@ Rails.application.routes.draw do
     root'app#index'
   get 'app/index'
   get 'app/rsstest'
+  get 'app/kids_baby_g'
+
+  get 'housewares/index'
+  
+  get 'housewares/baskets_storage_racks'
+
+  get 'housewares/cookware'
+
+  get 'housewares/food_containers'
+
+  get 'housewares/laundry'
+
+  get 'housewares/tabletop_dining'
+
+  get 'housewares/furniture'
+
+  get 'housewares/cleaning_tools'
+
+  get 'housewares/paper_foil_plastic'
+
+  get 'housewares/house_chemicals'
+
+  get 'housewares/licensed_housewares'
+
+  get 'housewares/magnets_memo_holders'
+
+  get 'housewares/package_deals'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
