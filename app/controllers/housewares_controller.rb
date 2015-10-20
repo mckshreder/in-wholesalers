@@ -79,7 +79,7 @@ class HousewaresController < ApplicationController
   end
 
   def laundry
-    @doc = Nokogiri::HTML(open('http://cleaningaccessorywholesale.com/category/laundry'))
+    @doc = Nokogiri::HTML(open('http://cleaningaccessorywholesale.com/tagkey/laundry/'))
     entries = @doc.css('#productsContainer')
     @entriesArray = []
     # For each entry, 
@@ -154,7 +154,7 @@ class HousewaresController < ApplicationController
 
 
   def house_chemicals
-    @doc = Nokogiri::HTML(open('http://cleaningaccessorywholesale.com/category/household-chemicals'))
+    @doc = Nokogiri::HTML(open('http://cleaningaccessorywholesale.com/tagkey/wholesale-cleaner'))
     entries = @doc.css('#productsContainer')
     @entriesArray = []
     # For each entry, 
