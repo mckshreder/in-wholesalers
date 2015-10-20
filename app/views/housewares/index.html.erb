@@ -1,29 +1,7 @@
 <div class="container mega-main clearfix">
   <div class="row">
     <div class="col-md-9 col-md-push-3 col-sm-push-4 col-sm-8 wow bounceInLeft" data-wow-duration="2s">
-      <div class="below-header clearfix">
-        <div class="">
-          <div class="">
-            <div class="hero">
-              <div class="clickablemenu ttmenu dark-style menu-red-gradient">
-                <div class="navbar navbar-default" role="navigation">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <a class="navbar-brand hidden-md hidden-lg visible-sm visible-xs" href="#"><img src="../assets/images/logo-no-line.jpg" alt=""></a> </div>
-              <!-- end navbar-header -->
-              
-              
-              <!--/.nav-collapse --> 
-            </div>
-                <!-- end navbar navbar-default clearfix --> 
-              </div>
-              <!-- end menu 1 --> 
-            </div>
-            <!-- end hero --> 
-            
-          </div>
-        </div>
-      </div>
+      <br>
       <div data-example-id="simple-carousel" class="below-headeer hidden-xs">
         <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
           <ol class="carousel-indicators">
@@ -44,52 +22,49 @@
         <div class="category"><a href="#"><img src="../assets/images/category.jpg" alt="" class="img-responsive"></a></div>
         <div class="menu-list">
           <ul id="menu-content" class="menu-content collapse out">
-            <li data-toggle="collapse" data-target="#women"> <a href="#"> Women <span class="arrow"></span></a>
-              <ul class="sub-menu collapse" id="women">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
+            <li data-toggle="collapse" data-target="#Pages_1"> <a href="#"> Pages 1 <span class="arrow"></span></a>
+              <ul class="sub-menu collapse" id="Pages_1">
+                 <li>
+                  <%= link_to('Home',housewares_index_path)%>
+                </li>
+                <li>
+                  <%= link_to('Cookware',housewares_cookware_path)%>
+                </li>
+
+                <li>
+                  <%= link_to('Food Containers',housewares_food_containers_path)%>
+                </li>
               </ul>
             </li>
-            <li data-toggle="collapse" data-target="#men"> <a href="#"> Men <span class="arrow"></span></a>
-              <ul class="sub-menu collapse" id="men">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
+            <li data-toggle="collapse" data-target="#pages_2"> <a href="#"> Pages 2 <span class="arrow"></span></a>
+              <ul class="sub-menu collapse" id="pages_2">
+                <li>
+                  <%= link_to('Laundry',housewares_laundry_path)%>
+                </li>
+
+                <li>
+                  <%= link_to('Tabletop Dining',housewares_tabletop_dining_path)%>
+                </li>
+
+                <li>
+                  <%= link_to('Cleaning Tools',housewares_cleaning_tools_path)%>
+                </li>
               </ul>
             </li>
-            <li data-toggle="collapse" data-target="#acc"> <a href="#"> Accessories <span class="arrow"></span></a>
+            <li data-toggle="collapse" data-target="#acc"> <a href="#"> Pages 3 <span class="arrow"></span></a>
               <ul class="sub-menu collapse" id="acc">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
+                <li>
+                <%= link_to('Household Chemicals',housewares_house_chemicals_path)%>
+                </li>
+
+                <li><%= link_to('Licensed Housewares',housewares_licensed_housewares_path)%></li>
               </ul>
             </li>
-            <li data-toggle="collapse" data-target="#kids"> <a href="#"> kids <span class="arrow"></span></a>
-              <ul class="sub-menu collapse" id="kids">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
-              </ul>
-            </li>
-            <li data-toggle="collapse" data-target="#look"> <a href="#"> Lookbook <span class="arrow"></span></a>
-              <ul class="sub-menu collapse" id="look">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
-              </ul>
-            </li>
-            <li data-toggle="collapse" data-target="#new"> <a href="#"> New Arrivals <span class="arrow"></span></a>
-              <ul class="sub-menu collapse" id="new">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
-              </ul>
-            </li>
+            
           </ul>
         </div>
       </div>
-      <ul class="list-unstyled images-3 hidden-sm hidden-xs">
+       <ul class="list-unstyled images-3 hidden-sm hidden-xs">
         <li><img src="../assets/images/free.jpg" alt="" class="img-responsive"></li>
         <li><img src="../assets/images/off.jpg" alt="" class="img-responsive"></li>
       </ul>
