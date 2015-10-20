@@ -22,10 +22,24 @@
         <div class="category"><a href="#"><img src="../assets/images/category.jpg" alt="" class="img-responsive"></a></div>
         <div class="menu-list">
           <ul id="menu-content" class="menu-content collapse out">
-            <li data-toggle="collapse" data-target="#home"> <a href="#"> Home <span class="arrow"></span></a>
+            <!-- <li data-toggle="collapse" data-target="#home"> <a href="#"> Home <span class="arrow"></span></a>
               <ul class="sub-menu collapse" id="home">
                  <li>
                   <%= link_to('Home',housewares_index_path)%>
+                </li>
+              </ul>
+            </li> -->
+            <li data-toggle="collapse" data-target="#cleaning"> <a href="#"> Cleaning Tools<span class="arrow"></span></a>
+              <ul class="sub-menu collapse" id="cleaning">
+                 <li>
+                  <%= link_to('Cleaning Tools',housewares_cleaning_tools_path)%>
+                </li>
+              </ul>
+            </li>
+            <li data-toggle="collapse" data-target="#chemicals"> <a href="#"> Household Chemicals<span class="arrow"></span></a>
+              <ul class="sub-menu collapse" id="chemicals">
+                 <li>
+                <%= link_to('Household Chemicals',housewares_house_chemicals_path)%>
                 </li>
               </ul>
             </li>
@@ -57,20 +71,6 @@
                 </li>
               </ul>
             </li>
-            <li data-toggle="collapse" data-target="#cleaning"> <a href="#"> Cleaning Tools<span class="arrow"></span></a>
-              <ul class="sub-menu collapse" id="cleaning">
-                 <li>
-                  <%= link_to('Cleaning Tools',housewares_cleaning_tools_path)%>
-                </li>
-              </ul>
-            </li>
-            <li data-toggle="collapse" data-target="#chemicals"> <a href="#"> Household Chemicals<span class="arrow"></span></a>
-              <ul class="sub-menu collapse" id="chemicals">
-                 <li>
-                <%= link_to('Household Chemicals',housewares_house_chemicals_path)%>
-                </li>
-              </ul>
-            </li>
             <li data-toggle="collapse" data-target="#lics"> <a href="#"> Licensed Housewares<span class="arrow"></span></a>
               <ul class="sub-menu collapse" id="lics">
                  <li>
@@ -86,8 +86,8 @@
         </div>
       </div>
        <ul class="list-unstyled images-3 hidden-sm hidden-xs">
-        <li><img src="../assets/images/free.jpg" alt="" class="img-responsive"></li>
-        <!-- <li><img src="../assets/images/off.jpg" alt="" class="img-responsive"></li> -->
+        <!-- <li><img src="../assets/images/free.jpg" alt="" class="img-responsive"></li> -->
+        <li><img src="../assets/images/off.jpg" alt="" class="img-responsive"></li>
       </ul>
     </div>
   </div>
