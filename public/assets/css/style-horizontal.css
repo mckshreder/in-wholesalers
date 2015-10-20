@@ -419,7 +419,7 @@ footer {
 	margin-left: -27px;
 }
 .below-header {
-  border-bottom: 1px solid #ececec;
+  /*border-bottom: 1px solid #ececec;*/
   border-top: 1px solid #ececec;
   padding-top: 21px;
   padding-bottom: 7px;

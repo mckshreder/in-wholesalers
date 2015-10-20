@@ -1,4 +1,21 @@
 <div class="container">
+  
+  
+
+    <ul class="breadcrumb">
+
+        <li><a href="#">Cleaning Tools</a></li>
+
+       
+        <li class="active">Grid</li>
+
+    </ul>
+
+
+  
+</div>
+
+<div class="container">
   <div class="">
     <div class="row"> 
 
@@ -70,7 +87,7 @@
                 <li class="col-md-4 col-sm-4 wow bounceInUp" data-wow-duration="2s">
                   <div class="img-about">
                     <div class="hot-icon"></div>
-                    <%= image_tag(entry.image, class: 'img-responsive') %>
+                    <%= link_to image_tag(entry.image, class: 'img-responsive'), entry.link %>
                     <div class="desc text-center">
                       <p class="font-15 mar-bot-0"><%= entry.title %></p>
                       <p class="font-1 font-bold mar-bot-0"><%= entry.id %></p>
@@ -241,7 +258,7 @@
       <p class="font-20 text-uppercase font-bold line-long">COMPARE</p>
       <p>You have no item to compare</p>
       <br>
-      <img src="http://res.cloudinary.com/mckshreder/image/upload/c_scale,q_100,w_270/v1445322672/Live-Chat-Support_edd6wu.jpg" alt="" class="img-responsive"> </div>
+      <!-- <img src="http://res.cloudinary.com/mckshreder/image/upload/c_scale,q_100,w_270/v1445322672/Live-Chat-Support_edd6wu.jpg" alt="" class="img-responsive">  --></div>
   </div>
 </div><div class="banner hidden-xs hidden-sm"> <img src="../assets/images/banner-long.jpg" alt="" class="img-responsive"></div>
 
