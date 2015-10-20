@@ -1,1 +1,64 @@
+ <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
 
+    google.load("feeds", "1");
+
+    function initialize() {
+      var feed = new google.feeds.Feed("http://www.4sgm.com/is-bin/INTERSHOP.enfinity/WFS/4sgm-Storefront-Site/en_US/-/USD/ViewParametricSearch-RSS;pgid=8uKCiKaqQORSR00pmU_Mlavu0000u8FQkchT?SearchCategoryUUID=t_DAwGQTQFQAAAELiFM0E4U1&rsstitle=Baby+Items");
+      feed.setNumEntries(20);
+      
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.getElementById("feed");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            var mediaImage = Array.prototype.slice
+            .call(entry.xmlNode.children).filter(function(el, i) {
+              return el.nodeName === "media:thumbnail" 
+            });
+            var thumbnail = new Image;
+            // set thumbnail `attributes` with `media:element` `attributes`
+            Array.prototype.slice
+            .call(mediaImage[0].attributes).forEach(function(key, _) {
+              thumbnail[key.name.replace(/[url].*/,"src")] = key.value
+            var div = document.createElement("div");
+            div.appendChild(document.createTextNode(entry.title));
+            div.appendChild(document.createTextNode(entry.link + "\n"));
+            div.appendChild(thumbnail);
+            container.appendChild(div);
+          }
+        }
+      });
+    }
+    google.setOnLoadCallback(initialize);
+
+    feed.setResultFormat(google.feeds.Feed.MIXED_FORMAT);
+  feed.setNumEntries(5);               
+  feed.load(function(result) {
+    if (!result.error) {
+    var container = document.getElementById("feed");
+      for (var i = 0; i < result.feed.entries.length; i++) {
+        var entry = result.feed.entries[i];
+        // select the `media:thumbnail` element
+        var mediaImage = Array.prototype.slice
+        .call(entry.xmlNode.children).filter(function(el, i) {
+          return el.nodeName === "media:thumbnail" 
+        });
+        var thumbnail = new Image;
+        // set thumbnail `attributes` with `media:element` `attributes`
+        Array.prototype.slice
+       .call(mediaImage[0].attributes).forEach(function(key, _) {
+              thumbnail[key.name.replace(/[url].*/,"src")] = key.value
+        });
+        var div = document.createElement("div");       
+        div.appendChild(document.createTextNode(entry.title + "\n"));
+        div.appendChild(document.createTextNode(entry.link + "\n"));
+        div.appendChild(thumbnail);
+        container.appendChild(div);                
+      }
+    }
+  });
+
+    </script>
+
+    <div id="feed"></div>

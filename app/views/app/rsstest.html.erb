@@ -1,12 +1,25 @@
 
-<% if @rss.items.count > 0 %>
-    <% @rss.items.each do |entry| %>
-    <div>
-    <%= link_to entry.title, entry.link %>
-    <!-- <%= link_to (entry.link)%> -->
-     <%= entry.description.html_safe %> 
-    <!-- <%= embed(entry.description)%>   -->
-     (<%= time_ago_in_words(entry.pubDate) %> ago via blog rss)</div>
+
+
+
+<!-- <%= @items %>? -->
+
+
+<% if @entriesArray.count > 0 %>
+    <% @entriesArray.each do |entry| %>
+    <div class = "html_feed">
+
+    <br>
+    <p>Title:  <%= entry.title %></p>
+    <p>link:  <%= entry.link %></p>
+    <p>id:  <%= entry.id %></p>
+    <p>pack:  <%= entry.pack %></p>
+    <p>image.url:  <%= entry.image %></p>
+    <p>reg:  <%= entry.reg_price %></p>
+    <p>sale:  <%= entry.sale_price %></p>
+    <p>submitted:  <%= entry.submitted %></p>
+    
+    </div>
     <% end %>   
 <% else %>
     <h2>No Posts Exist</h2>
