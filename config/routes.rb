@@ -17,19 +17,12 @@ Rails.application.routes.draw do
 
   get 'housewares/tabletop_dining'
 
-  get 'housewares/furniture'
-
   get 'housewares/cleaning_tools'
-
-  get 'housewares/paper_foil_plastic'
 
   get 'housewares/house_chemicals'
 
   get 'housewares/licensed_housewares'
 
-  get 'housewares/magnets_memo_holders'
-
-  get 'housewares/package_deals'
 
 
 

@@ -63,47 +63,36 @@
       </div>
       <div class="row">
         <ul class="list-unstyled grid-items clearfix">
-          
 
 
-    <% if @entriesArray.count > 0 %>
-    <% @entriesArray.each do |entry| %>
-          <li class="col-md-4 col-sm-4 wow bounceInUp" data-wow-duration="2s">
-            <div class="img-about">
-              <div class="hot-icon"></div>
-              <%= image_tag(entry.image, class: 'img-responsive') %>
-              <div class="desc text-center">
-                <p class="font-15 mar-bot-0"><%= entry.title %></p>
-                <p class="font-1 font-bold mar-bot-0"><%= entry.id %></p>
-                <img src="../assets/images/star-rating.png" alt="" class="mar-bot-1">
-                <p class="font-1 mar-bot-0"><%= entry.pack %></p>
-                <p class="font-1 font-bold mar-bot-0"><%= entry.reg_price%></p>
-                <p class="font-17 orange font-bold"><%= entry.sale_price%></p>
-                <!-- <a class="cart" href="#">add to cart</a> -->
-                <%= link_to("add to cart", entry.link, class: 'cart')%>
-              </div>
-            </div>
-          </li>
-    <% end %>   
-<% else %>
-    <h2>No Posts Exist</h2>
-<% end %>
-
-
-          
+          <% if @entriesArray.count > 0 %>
+          <% @entriesArray.each do |entry| %>
+                <li class="col-md-4 col-sm-4 wow bounceInUp" data-wow-duration="2s">
+                  <div class="img-about">
+                    <div class="hot-icon"></div>
+                    <%= image_tag(entry.image, class: 'img-responsive') %>
+                    <div class="desc text-center">
+                      <p class="font-15 mar-bot-0"><%= entry.title %></p>
+                      <p class="font-1 font-bold mar-bot-0"><%= entry.id %></p>
+                      <img src="../assets/images/star-rating.png" alt="" class="mar-bot-1">
+                      <p class="font-1 mar-bot-0"><%= entry.pack %></p>
+                      <p class="font-1 font-bold mar-bot-0"><%= entry.reg_price%></p>
+                      <p class="font-17 orange font-bold"><%= entry.sale_price%></p>
+                      <!-- <a class="cart" href="#">add to cart</a> -->
+                      <%= link_to("add to cart", entry.link, class: 'cart')%>
+                    </div>
+                  </div>
+                </li>
+            <% end %>   
+          <% else %>
+              <h2>No Posts Exist</h2>
+          <% end %>
+  
         </ul>
-
-        
-        
         <br>
 
-        
-        
-        
-        
-        
-    
-      
+
+
        <div class="clearfix grid-sorting col-md-4 col-sm-4 col-xs-12" >
         <div class="">
           <div class="pull-left">
@@ -157,99 +146,102 @@
       <div id="vertical-menu">
         <ul class="simple">
           <li >
-            <h3> <span class="plus pull-right">+</span>Women</h3>
+            <h3><span class="plus pull-right">+</span>Storage / Baskets</h3>
             <ul>
-              <li><a href="#">Reports</a> </li>
-              <li><a href="#">Search</a> </li>
-              <li><a href="#">Graphs</a> </li>
-              <li><a href="#">Settings</a> </li>
+              <li><%= link_to( 'View All Items',housewares_baskets_storage_racks_path)%></li>
             </ul>
           </li>
           <!-- we will keep this LI open by default -->
+          <li >
+            <h3><span class="plus pull-right">+</span>Cookware</h3>
+            <ul>
+              <li><%= link_to( 'View All Items',housewares_cookware_path)%></li>
+            </ul>
+          </li>
+         <li >
+            <h3><span class="plus pull-right">+</span>Food Containers</h3>
+            <ul>
+              <li><%= link_to( 'View All Items',housewares_food_containers_path)%></li>
+            </ul>
+          </li>
+          <li >
+            <h3><span class="plus pull-right">+</span>Laundry</h3>
+            <ul>
+              <li><%= link_to( 'View All Items',housewares_laundry_path)%></li>
+            </ul>
+          </li>
+          <li >
+            <h3><span class="plus pull-right">+</span>Tabletop Dining</h3>
+            <ul>
+              <li><%= link_to( 'View All Items',housewares_tabletop_dining_path)%></li>
+            </ul>
+          </li>
+          <li >
+            <h3><span class="plus pull-right">+</span>Cleaning Tools</h3>
+            <ul>
+              <li><%= link_to( 'View All Items',housewares_cleaning_tools_path)%></li>
+            </ul>
+          </li>
           <li>
-            <h3><span class="plus pull-right">+</span>Men</h3>
+            <h3><span class="plus pull-right">+</span>House Chemicals</h3>
             <ul>
-              <li><a href="#">Today's tasks</a> </li>
-              <li><a href="#">Urgent</a> </li>
-              <li><a href="#">Overdues</a> </li>
-              <li><a href="#">Recurring</a> </li>
-              <li><a href="#">Settings</a> </li>
-            </ul>
-          </li>
-          <li class="">
-            <h3><span class="plus pull-right">+</span>Kids</h3>
-            <ul>
-              <li><a href="#">Global favs</a> </li>
-              <li><a href="#">My favs</a> </li>
-              <li><a href="#">Team favs</a> </li>
-              <li><a href="#">Settings</a> </li>
+              <li><%= link_to( 'View All Items',housewares_house_chemicals_path)%></li>
             </ul>
           </li>
           <li>
-            <h3><span class="plus pull-right">+</span>Jewellery</h3>
+            <h3><span class="plus pull-right">+</span>Licensed Housewares</h3>
             <ul>
-              <li><a href="#">Today's tasks</a> </li>
-              <li><a href="#">Urgent</a> </li>
-              <li><a href="#">Overdues</a> </li>
-              <li><a href="#">Recurring</a> </li>
-              <li><a href="#">Settings</a> </li>
+              <li><%= link_to( 'View All Items',housewares_licensed_housewares_path)%></li>
             </ul>
           </li>
-          <li>
-            <h3><span class="plus pull-right">+</span>Accessories</h3>
-            <ul>
-              <li><a href="#">Today's tasks</a> </li>
-              <li><a href="#">Urgent</a> </li>
-              <li><a href="#">Overdues</a> </li>
-              <li><a href="#">Recurring</a> </li>
-              <li><a href="#">Settings</a> </li>
-            </ul>
-          </li>
+          
         </ul>
       </div>
       <p class="font-20 text-uppercase font-bold line-long">shop by</p>
       <p class="font-18 text-uppercase font-bold orange">MANUFACTURE</p>
       <ul class="list-unstyled simple">
-        <li><a href="#">Hermes <span class="pull-right">(20)</span></a></li>
-        <li><a href="#">Delce & Gabbana<span class="pull-right">(20)</span></a></li>
-        <li><a href="#">Louis Voitton<span class="pull-right">(16)</span></a></li>
-        <li><a href="#">Versace<span class="pull-right">(26)</span></a></li>
-        <li><a href="#">Hermes<span class="pull-right">(17)</span></a></li>
+        <li><a href="#">Dollar-Tree <span class="pull-right">(20)</span></a></li>
+        <li><a href="#">Bazaar<span class="pull-right">(20)</span></a></li>
+        <li><a href="#">4 Seasons<span class="pull-right">(16)</span></a></li>
+        <li><a href="#">USA supplier<span class="pull-right">(26)</span></a></li>
+        <li><a href="#">Other Manufacture<span class="pull-right">(17)</span></a></li>
       </ul>
       <p class="font-18 text-uppercase font-bold orange">price</p>
       <input type="range">
       <br>
-      <p class="font-18 text-uppercase font-bold orange">color</p>
+      <!-- <p class="font-18 text-uppercase font-bold orange">color</p>
       <ul class="list-unstyled simple">
         <li><a href="#">White <span class="pull-right">(20)</span></a></li>
         <li><a href="#">Red<span class="pull-right">(20)</span></a></li>
         <li><a href="#">Black<span class="pull-right">(16)</span></a></li>
         <li><a href="#">Blue<span class="pull-right">(26)</span></a></li>
-      </ul>
-      <p class="font-18 text-uppercase font-bold orange">size</p>
+      </ul> -->
+      <!-- <p class="font-18 text-uppercase font-bold orange">size</p>
       <ul class="list-unstyled simple">
         <li><a href="#"> X - Small <span class="pull-right">(20)</span></a></li>
         <li><a href="#">Small<span class="pull-right">(20)</span></a></li>
         <li><a href="#">Medium<span class="pull-right">(16)</span></a></li>
         <li><a href="#">Large<span class="pull-right">(26)</span></a></li>
-      </ul>
+      </ul> -->
       <p class="font-20 text-uppercase font-bold line-long">TAGS</p>
       <ul class="list-unstyled tags">
-        <li><a href="#">Jacket</a></li>
-        <li><a href="#">Men Store</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Dress</a></li>
-        <li class="active"><a href="#">Fashion</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">Jean</a></li>
-        <li><a href="#">Footwear</a></li>
+        <li><a href="#">Detergent</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">Hair</a></li>
+        <li><a href="#">Baby</a></li>
+        <li class="active"><a href="#">Gift</a></li>
+        <li><a href="#">Office</a></li>
+        <li><a href="#">Dollar Item</a></li>
+        <li><a href="#">USA</a></li>
+        <li><a href="#">Wholesale</a></li>
+        <li><a href="#">Cleaning</a></li>
       </ul>
       <div class="clearfix"></div>
       <br>
       <p class="font-20 text-uppercase font-bold line-long">COMPARE</p>
       <p>You have no item to compare</p>
       <br>
-      <img src="../assets/images/collection.jpg" alt="" class="img-responsive"> </div>
+      <img src="http://res.cloudinary.com/mckshreder/image/upload/c_scale,q_100,w_270/v1445322672/Live-Chat-Support_edd6wu.jpg" alt="" class="img-responsive"> </div>
   </div>
 </div><div class="banner hidden-xs hidden-sm"> <img src="../assets/images/banner-long.jpg" alt="" class="img-responsive"></div>
 
