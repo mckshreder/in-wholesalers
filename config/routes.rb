@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   
-    root'app#index'
-  get 'app/index'
-  get 'app/rsstest'
-  get 'app/kids_baby_g'
+    root'housewares#index'
+  # get 'app/index'
+  # get 'app/rsstest'
+  # get 'app/kids_baby_g'
 
   get 'housewares/index'
   
