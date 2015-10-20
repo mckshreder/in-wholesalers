@@ -7,47 +7,26 @@ class AppController < ApplicationController
   end
 
   def rsstest
-    # @regex = /(<([^>]+)>)/i;
-
-  # @rss = SimpleRSS.parse open('http://www.4sgm.com/is-bin/INTERSHOP.enfinity/WFS/4sgm-Storefront-Site/en_US/-/USD/ViewParametricSearch-RSS;pgid=8uKCiKaqQORSR00pmU_Mlavu0000K_PVledH?SearchCategoryUUID=t_DAwGQTQFQAAAELiFM0E4U1&rsstitle=Baby+Items')
-
-  # @feed = []
-  # @rss.items.each do |entry| 
-  #   @feed<<entry.description.html_safe
-  # end
-  # puts @feed
-
-  @doc = Nokogiri::HTML(open('http://www.babyaccessorieswholesale.com/'))
-  # @items = @doc.at_css("div.html_feed")
-  # Create an empty array
+  @doc = Nokogiri::HTML(open('http://www.cleaningaccessorywholesale.com/'))
   entries = @doc.css('#productsContainer')
   @entriesArray = []
   # For each entry, 
   # we're going to make an Entry object 
   # and push it into the array
-  entries.each do |entry|
-      title = entry.css('.ProductName').text
-      link = entry.css('.productImageSection a')[0]['href']
-      # link = raw_link.html_safe
-      # id = entry.css('#ProductSize , #ProductNumber').text
-      id = nil
-      pack = entry.css('#ProductSize').text 
-      image = entry.css('img')[0]['src']
-      reg_price = reg_price
-      sale_price = sale_price
-      submitted = submitted
-      @entriesArray << Entry.new(title, link, id, pack, image, reg_price, sale_price, submitted)
-  end
-   # puts @entriesArray.html_safe
-  # @feed = @rss.entries.description.gsub!(/\A"|"\Z/, '')
-render template: 'app/rsstest'
-
-
-  	 # url = "http://www.4sgm.com/is-bin/INTERSHOP.enfinity/WFS/4sgm-Storefront-Site/en_US/-/USD/ViewParametricSearch-RSS;pgid=8uKCiKaqQORSR00pmU_Mlavu0000K_PVledH?SearchCategoryUUID=t_DAwGQTQFQAAAELiFM0E4U1&rsstitle=Baby+Items"
-
-    # @feed = Feedjira::Feed.fetch_and_parse url
-
-
+    entries.each do |entry|
+        title = entry.css('.ProductName').text
+        link = entry.css('.productImageSection a')[0]['href']
+        # link = raw_link.html_safe
+        # id = entry.css('#ProductSize , #ProductNumber').text
+        id = entry.css('#ProductNumber').text
+        pack = entry.css('#ProductSize').text 
+        image = entry.css('img')[0]['src']
+        reg_price = entry.css('.Standard_Price').text
+        sale_price = entry.css('.Special_Price').text
+        submitted = entry.css('.productsPost').text
+        @entriesArray << Entry.new(title, link, id, pack, image, reg_price, sale_price, submitted)
+    end
+  render template: 'app/rsstest'
   end
 
 
