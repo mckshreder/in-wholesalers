@@ -428,8 +428,8 @@ footer {
   padding-top: 21px;
   padding-bottom: 7px;
 }.header {
-	padding-bottom: 24px;
-	padding-top: 31px;
+	padding-bottom: 0px;
+	padding-top: 13px;
 }
 .header .search .form-control {
 	border: 1px solid #666666;
