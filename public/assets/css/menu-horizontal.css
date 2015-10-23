@@ -113,6 +113,13 @@
 	margin-top: 15px;
 }
 .ttmenu .navbar ul {
+	/*padding-top: 10px;*/
+	padding-left: 0;
+	list-style: none;
+}
+.ttmenu .navbar ul.icons-top {
+	padding-top: 16px;
+	font-size: 15px;
 	padding-left: 0;
 	list-style: none;
 }
