@@ -114,7 +114,8 @@ body {
 }
 
 ul.list-unstyled li> img {
-	padding: 0px !important;
+	padding: 1px !important;
+	padding-top: 5px !important;
 }
 .acount {
 	float: right;
