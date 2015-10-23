@@ -2552,7 +2552,7 @@ textarea.form-group-lg .form-control, select[multiple].form-group-lg .form-contr
   display: inline-block;
   margin-bottom: 0;
   vertical-align: middle;
-  border: 1px solid #666666;
+  border: 1.7px solid #FF4F4F;
 }
 .form-inline .form-control {
 	display: inline-block;
