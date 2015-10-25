@@ -603,6 +603,12 @@ footer {
 }.mar-top-7 {
   margin-top: 7px;
 }
+.mar-top-0{
+	margin-top: 0px !important;
+}
+.mar-0{
+	margin: 0px !important;
+}
 
 .pad-left-0 {
 	padding-left: 0px !important;
@@ -610,8 +616,15 @@ footer {
 .pad-right-0 {
 	padding-right: 0px !important;
 }
-.mar-0{
-	margin: 0px !important;
+
+.pad-top-0 {
+	padding-top: 0px !important;
+}
+.pad-top-5 {
+	padding-top: 5px !important;
+}
+.pad-bot-5 {
+	padding-bottom: 5px !important;
 }
 /*menu home-3 */
 
@@ -1289,6 +1302,10 @@ footer {
 .line-long {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 }
+.input-group {
+ 
+  border: 1px solid;
+}
 
 }
 @media only screen and (max-width:540px) {
@@ -1389,9 +1406,11 @@ footer {
 	float:left !important;}
 	.below-header {
   border-bottom: 1px solid #ececec;
-  border-top: 1px solid #ececec;
-  padding-top: 21px;
-  padding-bottom: 7px;
+  /*border-top: 1px solid #ececec;*/
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+
 }
 }
 
