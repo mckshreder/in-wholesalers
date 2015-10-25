@@ -10,6 +10,13 @@ body {
 	font-size: 13px;
 	-webkit-font-smoothing: antialiased;
 }
+
+.form-red{
+	background-image: url(http://res.cloudinary.com/mckshreder/image/upload/q_100/v1445749925/inWholsalers/in-wholesaler-slider-header1.png);
+	font-weight: bold;
+	font-size: 18px;
+	color: white !important;
+}
 .border-test {
 	border: 1px solid;
 }
@@ -359,7 +366,8 @@ footer {
 }
 .header-search .form-control {
 	border-radius: 0;
-	font-size: 12px;
+	font-size: 19px;
+	color: black !important;
 }
 .search .btn-default {
 	background-color: #fff;
@@ -441,7 +449,7 @@ footer {
 .below-header {
   /*border-bottom: 1px solid #ececec;*/
   border-bottom: 1px solid #ececec;
-  padding-top: 4px;
+  padding-top: 18px;
   margin-bottom: 12px;
 }.header {
 	padding-bottom: 0px;
@@ -457,20 +465,23 @@ footer {
 	padding: 9px 12px;
 }
 .header-search .input-group-addon {
-  -moz-border-bottom-colors: none;
+ /* -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  background-color: #fff;
-  border-color: #666666 -moz-use-text-color #666666 #666666;
+  -moz-border-top-colors: none;*/
+  /*background-color: #fff;*/
+  /*border-color: #666666 -moz-use-text-color #666666 #666666;*/
   border-image: none;
   border-radius: 0;
   border-style: solid none solid solid;
   border-width: 0;
   color: #555;
-  font-size: 12px;
+  font-size: 19px;
   font-weight: normal;
   line-height: 1;
+  padding: 0px !important;
+  margin: 0px !important;
+  width: 140px !important;
  
  
   text-align: center;
@@ -500,8 +511,7 @@ footer {
   border-left: 0 none !important;
   border-right: 0 none;
   border-top: 0 none;
-  height: 41px;
-  width: 480px !important;
+  height: 51px;
 }
 .header-search {
 	margin-top: 17px;
@@ -1265,7 +1275,7 @@ footer {
 	margin-left: 0px;
 }
 .header-search input {
-	width: 270px !important;
+	width: 100% !important;
 }
 .navbar-brand > img {
 	padding-top: 12px;
@@ -1313,7 +1323,7 @@ footer {
 	margin-left: 0px;
 }
 .header-search input {
-	width: 210px !important;
+	width: 100% !important;
 	clear: both;
 }
 .tab-links a {

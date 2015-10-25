@@ -2552,7 +2552,8 @@ textarea.form-group-lg .form-control, select[multiple].form-group-lg .form-contr
   display: inline-block;
   margin-bottom: 0;
   vertical-align: middle;
-  border: 1.7px solid #FF4F4F;
+  border: 1px solid #bfbfbf;
+  width: 100%;
 }
 .form-inline .form-control {
 	display: inline-block;
@@ -3151,7 +3152,8 @@ pointer-events:none
 .input-group {
 	position: relative;
 	display: table;
-	border-collapse: separate
+	border-collapse: separate;
+	width:100%;
 }
 .input-group[class*="col-"] {
 	float: none;
@@ -3209,11 +3211,12 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 1;
-	color: #555;
+	color: white;
 	text-align: center;
-	background-color: #eee;
-	border: 1px solid #ccc;
-	border-radius: 4px
+	background-image: url(http://res.cloudinary.com/mckshreder/image/upload/c_crop,h_51,q_100,w_121/v1445749925/inWholsalers/in-wholesaler-slider-header1.png):;
+	/*background-color: #eee;*/
+	/*border: 1px solid #ccc;*/
+	/*border-radius: 4px*/
 }
 .input-group-addon.input-sm {
 	padding: 5px 10px;
