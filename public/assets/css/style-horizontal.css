@@ -12,10 +12,12 @@ body {
 }
 
 .form-red{
-	background-image: url(http://res.cloudinary.com/mckshreder/image/upload/q_100/v1445749925/inWholsalers/in-wholesaler-slider-header1.png);
+	background-image: url(http://res.cloudinary.com/mckshreder/image/upload/c_scale,h_47,q_100,w_880/v1445749925/inWholsalers/in-wholesaler-slider-header1.png);
 	font-weight: bold;
 	font-size: 18px;
 	color: white !important;
+	height: 51px !important;
+	padding: 0px !important ;
 }
 .border-test {
 	border: 1px solid;
@@ -118,6 +120,7 @@ body {
   color: #444444;
   padding-bottom: 0px;
   padding-top: 6px;
+  height:34px;
 }
 
 ul.list-unstyled li> img {
@@ -703,6 +706,7 @@ footer {
 	color: #444444;
 	padding-left: 19px;
 	text-decoration: none;
+	font-size: 16px;
 }
 
 
