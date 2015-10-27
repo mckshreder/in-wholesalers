@@ -122,7 +122,7 @@ body {
 
 ul.list-unstyled li> img {
 	padding: 1px !important;
-	padding-top: 5px !important;
+	padding-top: 4px !important;
 }
 .acount {
 	float: right;
@@ -481,7 +481,9 @@ footer {
   line-height: 1;
   padding: 0px !important;
   margin: 0px !important;
-  width: 140px !important;
+  width: 11% !important;
+  max-width: 62px !important;
+  top: 0px !important;
  
  
   text-align: center;
@@ -514,7 +516,7 @@ footer {
   height: 51px;
 }
 .header-search {
-	margin-top: 17px;
+	margin-top: 15px;
 }
 .black-bg {
 	background-color: #000;
@@ -619,9 +621,18 @@ footer {
 .mar-0{
 	margin: 0px !important;
 }
+.mar-left-24{
+	margin-left: 24px !important;
+}
 
+.pad-0 {
+	padding: 0px !important;
+}
 .pad-left-0 {
 	padding-left: 0px !important;
+}
+.pad-left-10 {
+	padding-left: 10px !important;
 }
 .pad-right-0 {
 	padding-right: 0px !important;
@@ -976,7 +987,7 @@ footer {
 	line-height: 16px;
 	padding-left: 5px;
 	padding-right: 5px;
-	padding-top: 16px;
+	padding-top: 20px;
 }
 
 .cart-text .list-inline > li > .text-left {
@@ -1278,7 +1289,7 @@ footer {
 	width: 100% !important;
 }
 .navbar-brand > img {
-	padding-top: 12px;
+	padding-top: 9px;
 }
 .below-header {
 	/*margin-top: 15px;*/
@@ -1417,8 +1428,8 @@ footer {
 	.below-header {
   border-bottom: 1px solid #ececec;
   /*border-top: 1px solid #ececec;*/
-  padding-top: 0px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 8px;
   margin-bottom: 0px;
 
 }
