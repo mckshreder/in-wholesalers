@@ -94,11 +94,14 @@
                     
                     <div class="desc text-center">
                       <p class="font-15 mar-bot-0"><%= entry.title[0..26] %> &hellip;</p>
-                      <p class="font-1 font-bold mar-bot-0"><%= entry.id %></p>
-                      <img src="../assets/images/star-rating.png" alt="" class="mar-bot-1">
-                      <p class="font-1 mar-bot-0"><%= entry.pack %></p>
+                      <!-- <p class="font-1 font-bold mar-bot-0"><%= entry.id %></p> -->
+                      <p class="font-1 font-bold mar-bot-0">Retail price: </p>
+                      <p class="font-17 orange font-bold">Wholesale Price: </p>
+                      <!-- <img src="../assets/images/star-rating.png" alt="" class="mar-bot-1">
                       <p class="font-1 font-bold mar-bot-0"><%= entry.reg_price%></p>
-                      <p class="font-17 orange font-bold"><%= entry.sale_price%></p>
+                      <p class="font-17 orange font-bold"><%= entry.sale_price%></p> -->
+                      <p class="font-1 mar-top-0">Casepack <%= entry.pack %></p>
+                      <p class="font-1 mar-top-0">Save $72 on a BOX! or Save $72 when you order Bulk!</p>
                       <!-- <a class="cart" href="#">add to cart</a> -->
                       <%= link_to("add to cart", entry.link, class: 'cart')%>
                     </div>

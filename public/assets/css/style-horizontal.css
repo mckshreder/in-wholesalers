@@ -380,17 +380,17 @@ footer {
 	color: #333;
 	color: #666666;
 	font-weight: bold;
-	height: 59px;
+	height: 51px;
 }
 .search .form-control {
-	/*border: 1px solid #666666;*/
+	border: 1px solid #666666;
 	border-radius: 0;
 	font-size: 18px;
 	display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
-    border: 1.7px solid #FF4F4F;
-    height: 59px;
+    /*border: 1.7px solid #FF4F4F;*/
+    height: 51px;
 
 }
 .search .btn-default:hover {

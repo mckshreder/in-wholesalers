@@ -45,7 +45,8 @@ class HousewaresController < ApplicationController
           # link = raw_link.html_safe
           # id = entry.css('#ProductSize , #ProductNumber').text
           id = entry.css('#ProductNumber').text
-          pack = entry.css('#ProductSize').text 
+          dad2 = entry.css('#ProductSize').text
+          pack = dad2.delete('CaseInnerPack/0')
           image = entry.css('img')[0]['src']
           reg_price = entry.css('.Standard_Price').text
           sale_price = entry.css('.Special_Price').text
