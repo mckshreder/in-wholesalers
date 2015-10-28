@@ -124,8 +124,8 @@ body {
 }
 
 ul.list-unstyled li> img {
-	padding: 1px !important;
-	padding-top: 4px !important;
+	/*padding: 1px !important;
+	padding-top: 4px !important;*/
 }
 .acount {
 	float: right;
