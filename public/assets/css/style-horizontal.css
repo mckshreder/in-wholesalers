@@ -1282,6 +1282,22 @@ footer {
 .right-cart {
 	float: right;
 }
+
+
+@media only screen and (max-width:1200px){
+	.nav-side-menu li a {
+		color: #444444;
+		padding-left: 11px;
+		text-decoration: none;
+		font-size: 14.4px;
+	}
+
+	.slider-text-md{
+		font-size:16px;
+
+	}
+}
+
  @media only screen and (max-width:790px) {
 	 .grid-items img{
 		 margin-left:auto;
