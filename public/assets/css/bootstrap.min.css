@@ -2568,7 +2568,7 @@ textarea.form-group-lg .form-control, select[multiple].form-group-lg .form-contr
 	vertical-align: middle
 }
 .form-inline .input-group .input-group-addon, .form-inline .input-group .input-group-btn, .form-inline .input-group .form-control {
-	width: auto
+	/*width: auto*/
 }
 .form-inline .input-group>.form-control {
 	width: 100%
