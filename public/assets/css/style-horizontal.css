@@ -14,6 +14,13 @@ body {
    visibility: hidden;
 }
 
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width:100%;
+}
+
 .form-red{
 	background-image: url(http://res.cloudinary.com/mckshreder/image/upload/c_scale,h_47,q_100,w_880/v1445749925/inWholsalers/in-wholesaler-slider-header1.png);
 	font-weight: bold;
@@ -457,6 +464,7 @@ footer {
   border-bottom: 1px solid #ececec;
   padding-top: 18px;
   margin-bottom: 12px;
+  background-color: white;
 }.header {
 	padding-bottom: 0px;
 	padding-top: 0px;
@@ -1304,6 +1312,13 @@ footer {
 }
 
 
+ @media only screen and (max-width:1200px) {
+
+.nav-side-menu li a {
+	font-size: 13px;
+}
+
+ }
 
  @media only screen and (max-width:790px) {
 	 .grid-items img{
@@ -1312,6 +1327,7 @@ footer {
 		 .grid-items .hot-icon {
 			 left:30px;
 			 }
+
 .below-header .navbar-nav > li:first-child {
 	margin-left: 0px;
 }
@@ -1360,6 +1376,10 @@ footer {
 
 }
 @media only screen and (max-width:540px) {
+
+	.mega { padding-top: 70px; }
+
+
 	.header-search .input-group-addon {
 		width:32px !important;
 	}
