@@ -487,8 +487,8 @@ footer {
   line-height: 1;
   padding: 0px !important;
   margin: 0px !important;
-  width: 11% !important;
-  max-width: 62px !important;
+  width: 53px !important;
+  max-width: 60px !important;
   top: 0px !important;
  
  
@@ -630,9 +630,20 @@ footer {
 .mar-left-24{
 	margin-left: 24px !important;
 }
+.mar-right-0{
+	margin-right: 0px !important;
+}
 
 .pad-0 {
 	padding: 0px !important;
+}
+.pad-2 {
+	padding-top: 7px !important;
+	padding-right: 7px !important;
+	padding-left: 7px !important;
+}
+.pad-10{
+	padding: 5px !important;
 }
 .pad-left-0 {
 	padding-left: 0px !important;
@@ -643,11 +654,20 @@ footer {
 .pad-right-0 {
 	padding-right: 0px !important;
 }
+.pad-right-5 {
+	padding-right: 5px !important;
+}
+.pad-right-10 {
+	padding-right: 10px !important;
+}
 
 .pad-top-0 {
 	padding-top: 0px !important;
 }
 .pad-top-5 {
+	padding-top: 5px !important;
+}
+.pad-top-10 {
 	padding-top: 5px !important;
 }
 .pad-bot-5 {
@@ -992,8 +1012,8 @@ footer {
 .cart-text .list-inline > li {
 	display: inline-block;
 	line-height: 16px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 0px;
+	padding-right:0px;
 	padding-top: 20px;
 }
 
@@ -1348,7 +1368,7 @@ footer {
 }
 .input-group {
  
-  border: 1px solid;
+ border: 1px solid #bfbfbf;
 }
 
 }
@@ -1443,7 +1463,7 @@ footer {
 
 .input-group {
  
-  border: 1px solid;
+border: 1px solid #bfbfbf;
 }
 
 .blog-item .pull-right {
