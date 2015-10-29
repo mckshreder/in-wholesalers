@@ -10,6 +10,9 @@ body {
 	font-size: 13px;
 	-webkit-font-smoothing: antialiased;
 }
+.wow {
+   visibility: hidden;
+}
 
 .form-red{
 	background-image: url(http://res.cloudinary.com/mckshreder/image/upload/c_scale,h_47,q_100,w_880/v1445749925/inWholsalers/in-wholesaler-slider-header1.png);
