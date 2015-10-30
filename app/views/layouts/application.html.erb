@@ -35,7 +35,8 @@
     <div class="container">
       <ul class="list-unstyled list-inline pull-left hidden-xs">
         <li>Welcome!</li>
-        <li><a class="pink" href="#">Sign In</a><span>&nbsp;or&nbsp;</span><a class="pink" href="#">Register</a></li>
+
+        <li><a class="pink font-bold font-15" href="#">Sign In</a><span>&nbsp;or&nbsp;</span><a class="pink font-bold font-15" href="#">Register</a></li>
       </ul>
       <ul class="list-inline list-unstyled icons-topp ">
         
@@ -52,7 +53,7 @@
         <li class="dropdown"><a aria-expanded="false" href="#" data-toggle="dropdown" class="dropdown-toggle">Contact Us&nbsp;<i class="fa fa-angle-down"></i></a>
        
         </li>
-        <li class="dropdown"><a aria-expanded="false" href="#" data-toggle="dropdown" class="dropdown-toggle">Eng&nbsp;<i class="fa fa-angle-down"></i></a>
+        <li class="dropdown"><a aria-expanded="false" href="#" data-toggle="dropdown" class="dropdown-toggle pink">Eng&nbsp;<i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu dropdown-menu-2">
             <li><a href="#">Spanish</a></li>
             <li><a href="#">German</a></li>
@@ -61,14 +62,14 @@
             <li><a href="#">Arabic</a></li>
           </ul>
         </li>
-        <li class="dropdown"><a aria-expanded="false" href="#" data-toggle="dropdown" class="dropdown-toggle">$ USD&nbsp;<i class="fa fa-angle-down"></i></a>
+        <!-- <li class="dropdown"><a aria-expanded="false" href="#" data-toggle="dropdown" class="dropdown-toggle">$ USD&nbsp;<i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu dropdown-menu-2">
-            <!-- <li><a href="#">£Pound</a></li>
+            <li><a href="#">£Pound</a></li>
             <li><a href="#">Euro</a></li>
-            <li><a href="#">Rupees</a></li> -->
+            <li><a href="#">Rupees</a></li>
             <li><a href="#">$Dollar</a></li>
           </ul>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
@@ -603,9 +604,12 @@
 <%= yield%>
 
 
+
+
+
 </body>
 <footer>
-  <div class="container wow bounceInUp" data-wow-duration="2s">
+  <div class="container">
     <div class="col-md-3 col-sm-6 footer-item"> <img src="../assets/images/logo-no-line.png" alt="" class="img-responsive">
       <ul class="list-unstyled footer-icons">
         <li class="message">contact@inwholesalers.com</li>
@@ -613,7 +617,14 @@
       </ul>
       <div class="social-icons-2"> <a href="#" class="social fa fa-twitter" title="google-plus"></a> <a href="#" class="social fa fa-google-plus" title="google-plus"></a><a href="#" class="social fa fa-facebook fa-icon" title="google-plus"></a><a href="#" class="social fa fa-linkedin" title="Linkedin"></a> <a href="#" class="social fa fa-pinterest" title="Pinterest"></a></div>
     </div>
-    <div class="col-md-2 col-sm-6 footer-item">
+    <div class="col-md-3 col-sm-6 footer-item">
+        <!-- <p class="font-15 font-bold text-uppercase mar-0">get connected</p> -->
+        <br>
+        
+            <%= render "partials/email_offer_modal"%>
+        <!-- /input-group --> 
+    </div>
+    <div class="col-md-3 col-sm-3 footer-item">
       <p class="font-15 font-bold text-uppercase">Help</p>
       <ul class="list-unstyled footer-links">
         <li> <a href="#">Orders & Returns</a> </li>
@@ -622,7 +633,7 @@
         <li> <a href="#">Affiliates</a> </li>
       </ul>
     </div>
-    <!-- <div class="col-md-2 col-sm-3 footer-item">
+    <!-- <div class="col-md-3 col-sm-3 footer-item">
       <p class="font-15 font-bold text-uppercase">My Account</p>
       <ul class="list-unstyled footer-links">
         <li> <a href="#">About Us</a> </li>
@@ -631,7 +642,7 @@
         <li> <a href="#">Terms & Conditions</a> </li>
       </ul>
     </div> -->
-    <div class="col-md-2 col-sm-6 footer-item">
+    <div class="col-md-3 col-sm-3 footer-item">
       <p class="font-15 font-bold text-uppercase">Information</p>
       <ul class="list-unstyled footer-links">
         <li> <a href="#">About Us</a> </li>
@@ -639,20 +650,6 @@
         <li> <a href="#">Privacy & Policy</a> </li>
         <li> <a href="#">Terms & Conditions</a> </li>
       </ul>
-    </div>
-    <div class="col-md-3 col-sm-6 footer-item">
-      <!-- <p class="font-15 font-bold text-uppercase">newsleeter</p> -->
-      <ul class="list-unstyled footer-links">
-        <li> <a href="#">Sign up  with your email to get updates!</a> </li>
-      </ul>
-      <br>
-      <div class="input-group search">
-        <input type="text" placeholder="Type your email" class="form-control">
-        <span class="input-group-btn">
-        <button type="button" class="btn btn-default">Go</button>
-        </span> </div>
-      <!-- /input-group --> 
-      
     </div>
   </div>
 </footer>
