@@ -213,7 +213,7 @@ ul.list-unstyled li> img {
   list-style: outside none none;
   margin: 17px 0 0;
   max-height: 410px;
-  min-width: 263px;
+  min-width: 63px;
   overflow-x: hidden;
   padding: 0 15px 21px 10px;
   position: absolute;
@@ -925,7 +925,7 @@ border-color: #ccc;
   display: none;
   float: left;
   font-size: 14px;
-  left: -95px;
+  left: -607px;
   list-style: outside none none;
   margin: 5px 4px 0;
   max-height: 463px;
@@ -1025,7 +1025,7 @@ border-color: #ccc;
 	line-height: 16px;
 	padding-left: 0px;
 	padding-right:0px;
-	padding-top: 20px;
+	padding-top: 18px;
 }
 
 .cart-text .list-inline > li > .text-left {
