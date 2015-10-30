@@ -2552,7 +2552,11 @@ textarea.form-group-lg .form-control, select[multiple].form-group-lg .form-contr
   display: inline-block;
   margin-bottom: 0;
   vertical-align: middle;
-  border: 1px solid #bfbfbf;
+  border: 1px solid;
+  color: #333;
+background-color: #fff;
+border-color: #ccc;
+  border-radius: 4px;
   width: 100%;
 }
 .form-inline .form-control {
@@ -2571,7 +2575,7 @@ textarea.form-group-lg .form-control, select[multiple].form-group-lg .form-contr
 	/*width: auto*/
 }
 .form-inline .input-group>.form-control {
-	width: 100%
+	width: 99%
 }
 .form-inline .control-label {
 	margin-bottom: 0;

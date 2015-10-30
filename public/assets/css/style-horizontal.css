@@ -470,8 +470,11 @@ footer {
 	padding-top: 0px;
 }
 .header .search .form-control {
-	border: 1px solid #666666;
-	border-radius: 0;
+	border: 1px solid transparent;
+  color: #333;
+background-color: #fff;
+border-color: #ccc;
+  border-radius: 4px;
 	font-size: 12px;
 	height: 40px;
 }
@@ -1332,7 +1335,7 @@ footer {
 	margin-left: 0px;
 }
 .header-search input {
-	width: 100% !important;
+	width: 98% !important;
 }
 .navbar-brand > img {
 	padding-top: 9px;
@@ -1371,10 +1374,31 @@ footer {
 }
 .input-group {
  
- border: 1px solid #bfbfbf;
+	/*border: 1px solid transparent;*/
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+	border-radius: 4px;
 }
 
+
 }
+
+@media only screen and (max-width:768px) {
+
+.input-group {
+ 
+	border: 1px solid transparent;
+    color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+	border-radius: 4px;
+
+
+	}
+
+}
+
 @media only screen and (max-width:540px) {
 
 	.mega { padding-top: 70px; }
@@ -1387,7 +1411,7 @@ footer {
 	margin-left: 0px;
 }
 .header-search input {
-	width: 100% !important;
+	width: 98% !important;
 	clear: both;
 }
 .tab-links a {
