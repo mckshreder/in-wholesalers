@@ -2,7 +2,7 @@
 <div class="mega-main">
       
 
-<div class="container wow bounceInLeft" data-wow-duration="2s">
+<div class="">
   
   
 
@@ -33,7 +33,7 @@
   <div class="row">
     
     
-    <div class="col-md-9 grid-right  col-md-push-3 wow bounceInUp" data-wow-duration="2s">
+    <div class="col-md-9 grid-right  col-md-push-3">
     
     <div class="row">
        
@@ -87,7 +87,7 @@
 
           <% if @entriesArray.count > 0 %>
           <% @entriesArray.each do |entry| %>
-                <li class="col-md-4 col-sm-4 wow bounceInUp" data-wow-duration="2s">
+                <li class="col-md-4 col-sm-4">
                   <div class="img-about">
                     <div class="hot-icon"></div>
                     <%= link_to image_tag(entry.image, class: 'img-responsive'), entry.link %>
@@ -155,7 +155,7 @@
 
       </div>
     </div>
-    <div class="col-md-3 grid-left  col-md-pull-9 wow bounceInUp" data-wow-duration="2s">
+    <div class="col-md-3 grid-left  col-md-pull-9">
       <p class="font-20 text-uppercase font-bold line-long">CATEGORY</p>
       
       
@@ -280,7 +280,5 @@
 
 <script src="../assets/js/search.js"></script> 
 <script src="../assets/js/ttmenu.js"></script> 
-<script src="../assets/js/wow.min.js"></script> 
-<script>
- new WOW().init();
-</script>
+<!-- <script src="../assets/js/wow.min.js"></script>  -->
+
