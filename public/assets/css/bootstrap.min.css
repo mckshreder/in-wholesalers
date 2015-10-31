@@ -1812,6 +1812,9 @@ pre code {
 .col-md-pull-10 {
 	right: 83.33333333%
 }
+.col-md-pull-9-5 {
+	right: 79%
+}
 .col-md-pull-9 {
 	right: 75%
 }
@@ -3656,6 +3659,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 	margin-bottom: 8px
 }
 @media (min-width:768px) {
+
 .navbar-form .form-group {
 	display: inline-block;
 	margin-bottom: 0;
@@ -3776,7 +3780,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
 	color: #5e5e5e;
-	background-color: transparent
+	background-color: white
 }
 .navbar-default .navbar-text {
 	color: #777

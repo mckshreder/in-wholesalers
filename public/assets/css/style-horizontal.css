@@ -297,6 +297,7 @@ ul.list-unstyled li> img {
 .feature {
   border: 1px solid #ececec;
   padding-left: 12px;
+  background-color: white;
 }.feature-border {
   border: 1px solid #ececec;
   padding: 12px;
@@ -466,8 +467,9 @@ footer {
   margin-bottom: 12px;
   background-color: white;
 }.header {
-	padding-bottom: 0px;
+	padding-bottom: 21px;
 	padding-top: 0px;
+	background-color: #F0F0F0 !important;
 }
 .header .search .form-control {
 	border: 1px solid transparent;
@@ -679,10 +681,16 @@ border-color: #ccc;
 	padding-top: 5px !important;
 }
 .pad-top-10 {
-	padding-top: 5px !important;
+	padding-top: 10px !important;
 }
 .pad-bot-5 {
 	padding-bottom: 5px !important;
+}
+
+.mar-top--20 {
+	margin-top: -25px !important;
+	z-index: 10;
+
 }
 /*menu home-3 */
 

@@ -19,7 +19,8 @@
 /* MENU VERTICAL */
 
 #vertical .navbar-brand {
-	width: 240px;
+	width: 100%;
+	background-color: #FF4F4F;
 }
 #vertical .ttmenu-full.open {
 	max-width: 100%;
@@ -28,7 +29,7 @@
 }
 #vertical .navbar-default, #vertical .navbar-default .nav, #vertical .navbar-default .collapse, #vertical .navbar-default .dropup, #vertical .navbar-default .dropdown {
 	position: static;
-	width: 240px !important;
+	width: 100% !important;
 	left: 0;
 }
 #vertical .navbar-collapse {
@@ -58,7 +59,9 @@
 	width: 240px !important
 }
 #vertical .navbar-default .navbar-nav li ul {
-	width: 100% !important
+	width: 322% !important;
+	height:90% !important;
+
 }
 #vertical .dropdown-menu, #vertical .navbar-default .ttmenu-content {
 	padding: 20px;
@@ -147,7 +150,7 @@
 }
 .navbar-default .navbar-nav > li > a {
   color: #444444 !important;
-  font-size: 15px;
+  font-size: 24px;
   font-style: normal;
   height: 48px;
   padding-bottom: 20px;
@@ -457,7 +460,7 @@
 
 @media (max-width: 767px) {
 #vertical .navbar-brand {
-	width: 60px;
+	width: 100%;
 }
 #vertical .ttmenu-full.open {
 	max-width: 100%;
