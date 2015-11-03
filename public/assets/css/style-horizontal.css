@@ -88,8 +88,6 @@ body {
 .font-25 {
 	font-size: 25px;
 }
-.mar-bot-20 {
-	margin-bottom:20px;}
 .font-26 {
 	font-size: 26px;
 }
@@ -687,6 +685,7 @@ border-color: #ccc;
 	padding-bottom: 5px !important;
 }
 
+
 .mar-top--20 {
 	margin-top: -25px !important;
 	z-index: 10;
@@ -1238,10 +1237,13 @@ border-color: #ccc;
 	border-color: #dedede;
 }
 .mar-bot-10 {
-	margin-bottom: 10px;
+	margin-bottom: 10px !important;
 }
 .mar-bot-20 {
-	margin-bottom: 20px;
+	margin-bottom: 20px !important;
+}
+.mar-bot-30 {
+	margin-bottom: 30px !important;
 }
 .checkout-right li {
 	margin-bottom: 27px;
