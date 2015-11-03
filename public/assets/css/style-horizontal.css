@@ -464,6 +464,7 @@ footer {
   padding-top: 18px;
   margin-bottom: 12px;
   background-color: white;
+
 }.header {
 	padding-bottom: 21px;
 	padding-top: 0px;
@@ -687,6 +688,12 @@ border-color: #ccc;
 
 
 .mar-top--20 {
+	margin-top: -25px !important;
+	z-index: 10;
+
+}
+
+.main-body-mar {
 	margin-top: -25px !important;
 	z-index: 10;
 
@@ -1329,9 +1336,19 @@ border-color: #ccc;
 
 .nav-side-menu li a {
 	font-size: 13px;
+	}
 }
 
- }
+ @media only screen and (max-width:1000px) {
+
+.main-body-mar {
+	margin-top: -9px !important;
+	z-index: 10;
+
+}
+}
+
+
 
  @media only screen and (max-width:790px) {
 	 .grid-items img{

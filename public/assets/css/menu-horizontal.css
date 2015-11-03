@@ -38,10 +38,10 @@
 #vertical .navbar-default .navbar-nav li .vertical-menu {
 	opacity: 1;
 	position: absolute;
-	left: 251px !important;
+	left: 95% !important;
 	right: 0 !important;
 	top: 5.5%;
-	margin-top: -47px !important;
+	margin-top: -40px !important;
 	max-width: 900px;
 	padding: 0;
 }
@@ -152,11 +152,11 @@
 }
 .navbar-default .navbar-nav > li > a {
   color: #444444 !important;
-  font-size: 24px;
+  font-size: 21px;
   font-style: normal;
-  height: 48px;
+  height: 40px;
   padding-bottom: 20px;
-  padding-top: 14px;
+  padding-top: 10px;
   text-transform: capitalize;
 }.navbar-default .navbar-nav > li > a:hover {
   color: #ff4f4f !important;
@@ -410,44 +410,45 @@
 /* MENU GRADIENT */
 
 .nav-image-hover{
-	padding-top: 20% !important;
+	padding-top: 14% !important;
 	color: white;
 	/*font-size: 50px !important;*/
 	font-family: Raleway, sans-serif;
 	font-size: 24px;
 	font-style: normal;
+
 }
 
 .nav-sub-text{
 background-color: rgb(255, 255, 255);
-border-bottom-color: rgb(51, 122, 183);
+/*border-bottom-color: rgb(51, 122, 183);
 border-left-color: rgb(51, 122, 183);
 border-right-color: rgb(51, 122, 183);
-border-top-color: rgb(51, 122, 183);
+border-top-color: rgb(51, 122, 183);*/
 box-sizing: border-box;
 color: #555555;
 cursor: auto;
 display: block;
 font-family: Raleway, sans-serif;
-font-size: 23px;
+font-size: 21px;
 font-style: normal;
 height: 48px;
 line-height: 20px;
 list-style-image: none;
 list-style-position: outside;
-list-style-type: none;
-outline-color: rgb(255, 79, 79);
+/*list-style-type: none;*/
+/*outline-color: rgb(255, 79, 79);*/
 outline-style: none;
 outline-width: 0px;
 padding-bottom: 0px;
 padding-left: 15px;
 padding-right: 15px;
 padding-top: 0px;
-margin-top: 0px;
+margin-top: 5px;
 margin-bottom: -10px !important;
 position: relative;
 text-align: left;
-text-decoration: none;
+/*text-decoration: none;*/
 /*text-transform: capitalize;*/
 }
 
@@ -470,6 +471,7 @@ text-decoration: none;
 }
 .menu-red-gradient .magnifier {
 	background-color: rgba(255, 79, 79,.8);
+	border-radius: 16px !important;
 }
 /* DARK STYLE */
 
