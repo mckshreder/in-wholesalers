@@ -38,10 +38,10 @@
 #vertical .navbar-default .navbar-nav li .vertical-menu {
 	opacity: 1;
 	position: absolute;
-	left: 240px !important;
+	left: 251px !important;
 	right: 0 !important;
-	top: auto;
-	margin-top: -65px !important;
+	top: 10%;
+	margin-top: -47px !important;
 	max-width: 900px;
 	padding: 0;
 }
@@ -59,8 +59,8 @@
 	width: 240px !important
 }
 #vertical .navbar-default .navbar-nav li ul {
-	width: 322% !important;
-	height:70% !important;
+	width: 460% !important;
+	height:75% !important;
 
 }
 #vertical .dropdown-menu, #vertical .navbar-default .ttmenu-content {
@@ -406,6 +406,46 @@
 }
 /* MENU GRADIENT */
 
+.nav-image-hover{
+	padding-top: 20% !important;
+	color: white;
+	/*font-size: 50px !important;*/
+	font-family: Raleway, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+}
+
+.nav-sub-text{
+background-color: rgb(255, 255, 255);
+border-bottom-color: rgb(51, 122, 183);
+border-left-color: rgb(51, 122, 183);
+border-right-color: rgb(51, 122, 183);
+border-top-color: rgb(51, 122, 183);
+box-sizing: border-box;
+color: #555555;
+cursor: auto;
+display: block;
+font-family: Raleway, sans-serif;
+font-size: 24px;
+font-style: normal;
+height: 48px;
+line-height: 20px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+outline-color: rgb(255, 79, 79);
+outline-style: none;
+outline-width: 0px;
+padding-bottom: 20px;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 0px;
+margin-top: 10px;
+position: relative;
+text-align: left;
+text-decoration: none;
+/*text-transform: capitalize;*/
+}
 
 
 .menu-red-gradient .form-control:focus {
@@ -416,15 +456,16 @@
 .menu-red-gradient .btn-primary {
 	border-radius: 0;
 	font-size: 13px;
-	background-color: #a90329 !important;
+	background-color: #FF4F4F !important;
 	border-color: #a90329 !important;
 	color: #fff !important;
+
 }
 .menu-red-gradient .box ul li:hover .fa {
 	color: #a90329 !important;
 }
 .menu-red-gradient .magnifier {
-	background-color: rgba(169,3,41,.9);
+	background-color: rgba(255, 79, 79,.8);
 }
 /* DARK STYLE */
 
@@ -480,7 +521,7 @@
 	position: static;
 	left: 100% !important;
 	right: 100% !important;
-	top: auto;
+	top: 10%;
 	margin-top: 0 !important;
 	max-width: 100%;
 	padding: 0;
