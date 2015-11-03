@@ -190,7 +190,7 @@
 }
 .ttmenu .dropdown-menu, .ttmenu .navbar-default .ttmenu-content {
 	background-color: #fff;
-	padding: 30px;
+	/*padding: 30px;*/
 
 }
 .ttmenu .navbar-default .ttmenu-full .dropdown-menu {
