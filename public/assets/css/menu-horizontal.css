@@ -507,6 +507,18 @@ text-align: left;
 
 @media (max-width: 767px) {
 
+	.ttmenu .dropdown-menu, .ttmenu .navbar-default .ttmenu-content{
+		padding: 0;
+	}
+
+	.navbar-collapse{
+		padding: 5px !important;
+	}
+
+	.navbar-nav {
+		margin:0px !important;
+	}
+
 
 
 #vertical .navbar-brand {

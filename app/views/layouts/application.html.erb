@@ -190,11 +190,16 @@
     </div>
   </div>
 
+<div class="visible-sm visible-xs">
+ </div>
+
+
+
   <div class="below-header hidden-lg hidden-md pad-0 ">
     <div class="container mar-top-10 ">
       <div class="">
         <div class="hero ">
-          <div class="clickablemenu ttmenu dark-style menu-red-gradient ">
+          <div class="hovermenu ttmenu dark-style menu-red-gradient ">
             <div class="navbar navbar-default" role="navigation">
               <div class="navbar-header ">
                 <button type="button" class="navbar-toggle collapsed mar-right-0" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -230,16 +235,28 @@
                   </div>
                 </div>
               </div>
+
+              
               <!-- end navbar-header -->
               
+              
               <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav col-md-3 col-sm-12 col-xs-12">
-               <%= render "partials/mobile_nav_dropdown"%>
+                <ul class="nav navbar-nav col-md-3 col-sm-12 col-xs-12 ">
+
+
+
+
+
+
+                <!-- THIS IS WHERE THE MOBILE NAV COMES IN -->
+
+
                   <li class="dropdown ttmenu-full">
                   <!-- <a href="/index" data-toggle="dropdown" class="dropdown-toggle">Home <b class="dropme"></b></a> -->
                     <ul id="first-menu" class="dropdown-menu">
                       <li>
                         <div class="ttmenu-content">
+
                           <div class="tabbable row">
                             <div class="col-md-3">
                               <ul class="nav nav-pills nav-stacked">
@@ -391,6 +408,8 @@
                       </li>
                     </ul>
                   </li>
+
+                   <%= render "partials/mobile_nav_dropdown"%>
                   <!-- end mega menu -->
                   <!-- <li class="dropdown ttmenu-full"><a href="home-2.html" data-toggle="dropdown" class="dropdown-toggle">shop</a> </li> -->
                   <!-- end mega menu -->
