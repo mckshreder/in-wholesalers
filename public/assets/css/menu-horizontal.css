@@ -115,7 +115,7 @@
 .ttmenu .navbar-default .navbar-toggle {
 	border-color: #111;
 	color: #fff !important;
-	margin-top: 15px;
+	/*margin-top: 15px;*/
 }
 .ttmenu .navbar ul {
 	/*padding-top: 10px;*/
