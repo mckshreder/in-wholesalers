@@ -10,7 +10,12 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,600);
 /* NO NEED TO ADD */
 
-
+.floater-nav{
+	position: fixed;
+	z-index: 100;
+	width:100%;
+	margin-bottom: 20% !important;
+}
 .hero {
   margin-bottom: 0;
   margin-top: -10px;
@@ -500,8 +505,12 @@ text-align: left;
 .dark-style .navbar-default .dropdown-menu li a:hover, .dark-style .navbar-default .dropdown-menu li a:focus {
 	background: #ffffff;
 }
-.dark-style .form-control, .dark-style .searchbox-icon, .searchbox-submit, .dark-style .navbar-default {
+ .dark-style .searchbox-icon, .searchbox-submit, .dark-style .navbar-default {
 	background: #fff; /* Old browsers *//* IE9 SVG, needs conditional override of 'filter' to 'none' */
+}
+
+.dark-style .form-control{
+	background: #fff;
 }
 
 /* RESPONSIVE */
