@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>InWholesalers</title>
-	<!-- <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %> -->
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %> 
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
 	<meta charset="utf-8">
@@ -25,11 +25,12 @@
 	<!--animations-->
 	<link href="../assets/css/animate.css" rel="stylesheet" type="text/css">
 	<link href="../assets/css/hover.css" rel="stylesheet" type="text/css">
-  <!--<script type="text/javascript">
-    $(window).load(function(){
-        $('.example-modal-sm-1').modal('show');
-    });
-</script>-->
+  <link href="../assets/css/slick-theme.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+
+
+
 </head>
 <body>
 <header>
@@ -707,6 +708,29 @@
 
 </script>
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+  $('.your-class').slick({
+      dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  accessability: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  arrows:true,
+    
+  });
+});
+</script>
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -727,7 +751,7 @@ cdtd();</script><!--animations-->
 <script src="../assets/js/wow.min.js"></script> 
 <script>
  new WOW().init();
- new WOW.sync();
+
 </script>
 
 </body>
