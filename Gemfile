@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 
-gem 'owlcarousel-rails'
 
 gem 'wow-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

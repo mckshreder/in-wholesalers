@@ -13,5 +13,40 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require owl.carousel
 //= require_tree .
+
+
+
+$(window).load(function(){
+  $('.home-slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 3000,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  accessability: true,
+  autoplay: true,
+  autoplaySpeed:5000,
+  arrows:true,
+  lazyLoad: 'progressive'
+
+ 
+    
+  });
+
+  $('.brand-slider').slick({
+  infinite: true, 
+  speed: 20000,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  autoplay: true,
+  autoplaySpeed:0,
+  ease: false,
+  cssEase: 'linear',
+  arrows:false,
+
+ 
+    
+  });
+
+});
