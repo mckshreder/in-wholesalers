@@ -28,8 +28,8 @@ $(window).load(function(){
   autoplay: true,
   autoplaySpeed:5000,
   arrows:true,
-  lazyLoad: 'progressive'
-
+  lazyLoad: 'progressive',
+  mobileFirst: true,
  
     
   });

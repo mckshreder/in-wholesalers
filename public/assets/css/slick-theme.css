@@ -200,3 +200,26 @@
     opacity: .75;
     color: #ff4f4f;
 }
+
+@media (max-width:768px) {
+.slick-prev
+{
+    left: 5px;
+    z-index: 10;
+}
+[dir='rtl'] .slick-prev
+{
+    right: 5px;
+    left: auto;
+}
+
+.slick-next
+{
+    right: 5px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: 5px;
+}
+}
