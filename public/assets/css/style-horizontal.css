@@ -33,7 +33,7 @@ body {
 	border: 1px solid;
 }
 .font-12 {
-	font-size: 12px;
+	font-size: 12px !important;
 }
 
 .grid-items img {
@@ -99,6 +99,12 @@ body {
 }
 .pink {
 	color: #ff4f4f !important;
+}
+.bg-pink {
+	background-color: #ff4f4f !important;
+}
+.white{
+	color: white !important;
 }
 .line {
 	background-color: #dddddd;

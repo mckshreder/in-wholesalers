@@ -44,6 +44,23 @@ $(window).load(function(){
   ease: false,
   cssEase: 'linear',
   arrows:false,
+  mobileFirst: true,
+
+ 
+    
+  });
+
+  $('.hot-slider').slick({
+  infinite: true, 
+  speed: 20000,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  autoplay: true,
+  autoplaySpeed:0,
+  ease: false,
+  cssEase: 'linear',
+  arrows:false,
+  mobileFirst: true,
 
  
     

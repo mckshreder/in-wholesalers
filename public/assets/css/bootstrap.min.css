@@ -1191,6 +1191,9 @@ mark, .mark {
 .text-nowrap {
 	white-space: nowrap
 }
+.text-italic {
+    font-style: italic;
+}
 .text-lowercase {
 	text-transform: lowercase
 }
