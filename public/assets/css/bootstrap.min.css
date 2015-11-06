@@ -2553,7 +2553,7 @@ textarea.form-group-lg .form-control, select[multiple].form-group-lg .form-contr
 	margin-bottom: 10px;
 	color: #737373
 }
-@media (min-width:768px) {
+@media (min-width:769px) {
 .form-inline .form-group {
   display: inline-block;
   margin-bottom: 0;
