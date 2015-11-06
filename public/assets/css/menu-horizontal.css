@@ -25,7 +25,7 @@
 
 #vertical .navbar-brand {
 	width: 100%;
-	background-color: #FF4F4F;
+	/*background-color: #FF4F4F;*/
 }
 #vertical .ttmenu-full.open {
 	max-width: 100%;
@@ -158,9 +158,9 @@
 }
 .navbar-default .navbar-nav > li > a {
   color: #444444 !important;
-  font-size: 21px;
+  font-size: 16px;
   font-style: normal;
-  height: 40px;
+  height: 30px;
   padding-bottom: 20px;
   padding-top: 10px;
   text-transform: capitalize;
