@@ -1045,63 +1045,79 @@ select {
 font-style: normal;
 margin-left: 0px;
 /*float: left;*/
-}.flaticon-add186:before {
+}}.flaticon-add186:before {
 	content: "\e000";
 }
-.flaticon-award24:before {
+.flaticon-baby137:before {
 	content: "\e001";
 }
-.flaticon-baby137:before {
+.flaticon-beds2:before {
 	content: "\e002";
 }
-.flaticon-bath:before {
+.flaticon-christmaspresent11:before {
 	content: "\e003";
 }
-.flaticon-beds2:before {
+.flaticon-copyrighted:before {
 	content: "\e004";
 }
-.flaticon-christmaspresent11:before {
+.flaticon-delivery36:before {
 	content: "\e005";
 }
-.flaticon-copyrighted:before {
+.flaticon-dining6:before {
 	content: "\e006";
 }
-.flaticon-dining6:before {
+.flaticon-gardening8:before {
 	content: "\e007";
 }
-.flaticon-gardening8:before {
+.flaticon-headphone4:before {
 	content: "\e008";
 }
-.flaticon-headphone4:before {
+.flaticon-heart296:before {
 	content: "\e009";
 }
 .flaticon-heart95:before {
 	content: "\e00a";
 }
-.flaticon-present31:before {
+.flaticon-marker20:before {
 	content: "\e00b";
 }
-.flaticon-shopper29:before {
+.flaticon-menu48:before {
 	content: "\e00c";
 }
-.flaticon-shoppingstore7:before {
+.flaticon-opened4:before {
 	content: "\e00d";
 }
-.flaticon-shoppingstore8:before {
+.flaticon-present31:before {
 	content: "\e00e";
 }
-.flaticon-towel:before {
+.flaticon-shirt4:before {
 	content: "\e00f";
 }
-.flaticon-two17:before {
+.flaticon-shopper29:before {
 	content: "\e010";
 }
-.flaticon-watering1:before {
+.flaticon-shopping122:before {
 	content: "\e011";
 }
-.flaticon-wiping7:before {
+.flaticon-shopping232:before {
 	content: "\e012";
 }
+.flaticon-shoppingstore7:before {
+	content: "\e013";
+}
+.flaticon-shoppingstore8:before {
+	content: "\e014";
+}
+.flaticon-towel:before {
+	content: "\e015";
+}
+.flaticon-two17:before {
+	content: "\e016";
+}
+.flaticon-watering1:before {
+	content: "\e017";
+}
+
 
 
 

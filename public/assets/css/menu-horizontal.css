@@ -158,12 +158,13 @@
 }
 .navbar-default .navbar-nav > li > a {
   color: #444444 !important;
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   height: 30px;
   padding-bottom: 20px;
-  padding-top: 10px;
+  padding-top: 5px;
   text-transform: capitalize;
+  /*border: 1px solid #ececec !important;*/
 }.navbar-default .navbar-nav > li > a:hover {
   color: #ff4f4f !important;
   

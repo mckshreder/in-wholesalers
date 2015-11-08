@@ -106,6 +106,9 @@ body {
 .white{
 	color: white !important;
 }
+.black{
+	color: #333 !important;
+}
 .line {
 	background-color: #dddddd;
 	height: 1px;
@@ -725,6 +728,14 @@ border-color: #ccc;
 	margin-top: -25px !important;
 	z-index: 10;
 
+}
+
+.email-button{
+	border: none !important;
+}
+
+.border-rad-0{
+	border-radius: 0px !important;
 }
 /*menu home-3 */
 .vertical-align{
