@@ -76,7 +76,7 @@
 }
 #vertical .dropme:after {
 	content: "\f105";
-	color: #fff;
+	color: #d1d1d1;
 	position: absolute;
 	right: 20px;
 	padding-left: 5px;
