@@ -1026,6 +1026,86 @@ select {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box
 }
+
+
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        /*font-size: 20px;*/
+font-style: normal;
+margin-left: 0px;
+/*float: left;*/
+}.flaticon-add186:before {
+	content: "\e000";
+}
+.flaticon-award24:before {
+	content: "\e001";
+}
+.flaticon-baby137:before {
+	content: "\e002";
+}
+.flaticon-bath:before {
+	content: "\e003";
+}
+.flaticon-beds2:before {
+	content: "\e004";
+}
+.flaticon-christmaspresent11:before {
+	content: "\e005";
+}
+.flaticon-copyrighted:before {
+	content: "\e006";
+}
+.flaticon-dining6:before {
+	content: "\e007";
+}
+.flaticon-gardening8:before {
+	content: "\e008";
+}
+.flaticon-headphone4:before {
+	content: "\e009";
+}
+.flaticon-heart95:before {
+	content: "\e00a";
+}
+.flaticon-present31:before {
+	content: "\e00b";
+}
+.flaticon-shopper29:before {
+	content: "\e00c";
+}
+.flaticon-shoppingstore7:before {
+	content: "\e00d";
+}
+.flaticon-shoppingstore8:before {
+	content: "\e00e";
+}
+.flaticon-towel:before {
+	content: "\e00f";
+}
+.flaticon-two17:before {
+	content: "\e010";
+}
+.flaticon-watering1:before {
+	content: "\e011";
+}
+.flaticon-wiping7:before {
+	content: "\e012";
+}
+
+
+
+
 html {
 	font-size: 10px;
 	-webkit-tap-highlight-color: rgba(0,0,0,0)
